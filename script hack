@@ -1,4 +1,4 @@
-ocal OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/nguyen1234-pixel/kittgaming-menu/refs/heads/main/menu%20hack')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/nguyen1234-pixel/kittgaming-menu/refs/heads/main/menu%20hack')))()
 
 local Window = OrionLib:MakeWindow({Name = "KittGaming 2.0", HidePremium = false, SaveConfig = true, ConfigFolder = "dxl_bf"})
 
