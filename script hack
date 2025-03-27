@@ -1,0 +1,180 @@
+ocal OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/nguyen1234-pixel/kittgaming-menu/refs/heads/main/menu%20hack')))()
+
+local Window = OrionLib:MakeWindow({Name = "KittGaming 2.0", HidePremium = false, SaveConfig = true, ConfigFolder = "dxl_bf"})
+
+-- Các tab trong giao diện
+local Tab = Window:MakeTab({ Name = "Farm Blox Fruit", Icon = "rbxassetid://4483345998", PremiumOnly = false })
+local Tab2 = Window:MakeTab({ Name = "Sea Event", Icon = "rbxassetid://4483345998", PremiumOnly = false })
+local Tab3 = Window:MakeTab({ Name = "Island Sea Event", Icon = "rbxassetid://4483345998", PremiumOnly = false })
+local Tab4 = Window:MakeTab({ Name = "Quest/Item", Icon = "rbxassetid://4483345998", PremiumOnly = false })
+local Tab5 = Window:MakeTab({ Name = "(Fruit/Raid/Raid_Pirate/)", Icon = "rbxassetid://4483345998", PremiumOnly = false })
+local Tab6 = Window:MakeTab({ Name = "Teleport Island", Icon = "rbxassetid://4483345998", PremiumOnly = false })
+local Tab7 = Window:MakeTab({ Name = "Setting", Icon = "rbxassetid://4483345998", PremiumOnly = false })
+local Tab8 = Window:MakeTab({ Name = "Script New Redz hub", Icon = "rbxassetid://4483345998", PremiumOnly = false })
+
+Tab:AddSection({Name = "Farm"})
+                                 
+})
+Tab:AddButton({
+	Name = "Farm Level",
+	Callback = function()
+            _G.Config["AutoFarmLevel"] = not _G.Config["AutoFarmLevel"] do
+spawn(function()
+    while _G.Config["AutoFarmLevel"] do wait()
+["Item"] = {
+    ["Melee"] = {
+        ["Enable"] = true
+    }
+}
+end
+})
+
+Tab:AddSection({Name = "Bone (SEA 3)"})
+
+Tab:AddButton({
+	Name = "Farm Bone(SEA 3)",
+	Callback = function()
+            _G.Config["AutoFarmRebornSkeleton"] = not _G.Config["AutoFarmRebornSkeleton"]
+spawn(function()
+    while _G.Config["AutoFarmRebornSkeleton"] do wait()
+["Item"] = {
+    ["Melee"] = {
+        ["Enable"] = true
+    }
+}
+end
+})
+
+Tab:AddButton({
+	Name = "Farm Soul Reaper (SEA 3)",
+	Callback = function()
+            _G.Config["KillSoulReaper"] = not _G.Config["KillSoulReaper"] -- kill Soul Reaper
+spawn(function()
+    while _G.Config["KillSoulReaper"] do wait()
+["Item"] = {
+    ["Melee"] = {
+        ["Enable"] = true
+    }
+}
+end
+})
+
+Tab:AddButton({
+        Name = "Exchange Bones (SEA 3)",
+        Callback = function()
+            _G.Config["AutoExchangeBones"] = not _G.Config["AutoExchangeBones"] -- Đảo trạng thái bật/tắt
+end
+
+Tab:AddSection({Name = "Chest (SEA 1-2-3)"})
+
+})
+Tab:AddButton({
+        Name = "Farm Chest (NO RESET ACCOUNT BLOX FRUIT SEA 1-2-3)",
+        Callback = function()
+            _G.Config["AutoChest"] = not _G.Config["AutoChest"] -- Đảo trạng thái bật/tắt
+            _G.TimeReset = 7 -- Thời gian tự reset (giây)
+end
+})
+
+Tab:AddSection({Name = "Boss"})
+
+})
+Tab:AddButton({
+        Name = "Boss Kill All (SEA 3)",
+        Callback = function()
+            _G.Config["AutoKillBoss"] = not _G.Config["AutoKillBoss"] -- Đảo trạng thái bật/tắt
+            local BossList = {
+                "Stone",
+                "Hydra Leader",
+                "Kilo Admiral",
+                "Captain Elephant",
+                "Beautiful Pirate",
+                "Cake Queen",
+                "Dough King",
+                "Longma",
+                "Rip Indra",
+                "Soul Reaper"
+
+local attackSpeed = 0.5 -- Điều chỉnh tốc độ đánh (giây)
+spawn(function()
+    while _G.Config["AutoKillBoss"] do wait()
+["Item"] = {
+    ["Melee"] = {
+        ["Enable"] = true
+    }
+}
+end
+})
+
+Tab:AddSection({Name = "Speed Boat"})
+
+Tab2:AddButton({
+        Name = "Fast Boat",
+        Description = "Giúp Thuyền Di Chuyển Nhanh Hơn Hãy Kết Hợp Tốc độ Speed Boat Để Hoạt Động",
+        Callback = function()
+            _G.Config["FastBoat"] = not _G.Config["FastBoat"]
+end
+})
+
+Tab2:AddButton({
+        Name = "Speed X350",
+        Description = "Tốc Độ",
+        Callback = function()
+            _G.Tweenspeed = 350
+end
+})
+
+Tab2:AddButton({
+        Name = "KILL PIRANHA",
+        Description = "GIẾT CÁ ĐIỆN",
+        Callback = function()
+            _G.AutoKillPiranha = false
+  },
+
+  ["Item"] = {
+
+    ["Melee"] = {["Enable"] = true,
+
+      ["Z"] = {["Enable"] = true, ["Hold Time"] = 1.5},
+
+      ["X"] = {["Enable"] = true, ["Hold Time"] = 0.1},
+
+      ["C"] = {["Enable"] = true, ["Hold Time"] = 0.1}
+end
+})
+
+Tab:AddSection({Name = "ESP/ESPFRUIT/"})
+
+Tab2:AddButton({
+        Name = "ESP",
+        Description = "Hiện Hết Tên Người Chơi",
+        _G.Config["ESP"] = true -- Trạng thái bật/tắt ESP
+end
+})
+
+Tab2:AddButton({
+        Name = "ESP FRUIT",
+        Description = "Hiện Hết Tên Trái ác quỷ",
+        _G.Config["ESP_FRUIT"] = true -- Trạng thái bật/tắt ESP
+local fruitList = {
+    "Bomb Fruit", "Spike Fruit", "Blade Fruit", "Spring Fruit", "Rocket Fruit", "Spin Fruit", "Smoke Fruit",
+    "Flame Fruit", "Ice Fruit", "Sand Fruit", "Dark Fruit", "Light Fruit", "Magma Fruit", "Rubber Fruit",
+    "Barrier Fruit", "Ghost Fruit", "Quake Fruit", "Buddha Fruit", "Love Fruit", "Spider Fruit",
+    "Phoenix Fruit", "Portal Fruit", "Rumble Fruit", "Pain Fruit", "Gravity Fruit", "Dough Fruit",
+    "Shadow Fruit", "Venom Fruit", "Control Fruit", "Spirit Fruit", "Dragon Fruit", "Leopard Fruit",
+    "Kitsune Fruit", "T-Rex Fruit", "Yeti Fruit", "Gas Fruit",
+}
+end
+})
+
+Tab:AddSection({Name = "FIX LAG"})
+
+Tab2:AddButton({
+        Name = "FIX LAG (XÓA ĐỒ HỌA)",
+        Description = "Xóa Đồ Họa + FAST MODE Có Thể Xóa Bản Đồ Blox Fruit",
+        repeat wait(5) until game:IsLoaded()
+for _, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("Part") or v:IsA("MeshPart") or v:IsA("UnionOperation") or v:IsA("Decal") or v:IsA("Texture") then
+        v:Destroy()
+    end
+end
